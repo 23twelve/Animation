@@ -1,0 +1,30 @@
+body {
+    min-height: 100vh;
+    background-color: rgb(6, 6, 54);
+}
+
+.earth {
+     clip-path: circle(18%);
+     width: 1000px;
+     padding: 100px;
+     position: relative;
+}
+
+@keyframes moon{
+    0% {
+        bottom: 100px; right: 100px;
+    }
+    100% {
+        bottom: 500px; right: 600px;
+    }
+}
+
+.moon {
+    width: 277.7px;
+    clip-path: circle(34%);
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    animation: moon 5s infinite;
+}
+
